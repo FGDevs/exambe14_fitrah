@@ -1,0 +1,23 @@
+{
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon . ",
+        "test": "node test.js"
+    },
+    "dependencies": {
+        "bootstrap": "^4.5.2",
+        "cors": "^2.8.5",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "express-bearer-token": "^2.4.0",
+        "handlebars": "^4.7.6",
+        "jsonwebtoken": "^8.5.1",
+        "mongodb": "^3.6.2",
+        "mongoose": "^5.10.9",
+        "multer": "^1.4.2",
+        "mysql": "github:mysqljs/mysql",
+        "mysqljs": "0.0.2-security",
+        "nodemailer": "^6.4.13",
+        "socket.io": "^2.3.0"
+    }
+}
