@@ -9,7 +9,7 @@ const db = mysql.createConnection({
 });
 
 db.connect((error)=>{
-    error ? console.log('Database Error '+error.message) : console.log('DB connect sukses');
+    error ? console.log('Database Error '+error.message) : console.log(`${process.env.DB_DATABASE} connect sukses`);
 });
 
 module.exports = db;
