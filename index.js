@@ -18,10 +18,19 @@ app.get('/',(req,res)=>{
 })
 
 const {
-    AuthRouter
+    AuthRouter,
+    ReportRouter,
+    ProductRouter
 } = require('./routes')
 
+// ->> Jabawan No. 1
 app.use('/user',AuthRouter)
+
+// ->> Jawaban No. 2
+app.use('/report',ReportRouter)
+
+// ->> Jawaban No.3 
+app.use('/product',ProductRouter)
 
 app.listen(PORT,()=>{
     console.log(`API aktif di PORT ${PORT}`)
